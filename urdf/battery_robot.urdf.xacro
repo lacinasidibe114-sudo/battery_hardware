@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="battery_robot">
+  <xacro:include filename="battery_control.xacro" />
+  <link name="base_link"/>
+</robot>

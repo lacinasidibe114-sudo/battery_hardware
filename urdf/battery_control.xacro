@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <ros2_control name="BatterySystem" type="sensor">
+    <hardware>
+      <plugin>battery_hardware/BatteryInterface</plugin>
+      <param name="device">/dev/ttyUSB0</param> <!-- Adapte le port -->
+    </hardware>
+    
+    <sensor name="battery_sensor">
+      <state_interface name="voltage"/>
+      <state_interface name="current"/>
+      <state_interface name="power"/>
+    </sensor>
+  </ros2_control>
+</robot>

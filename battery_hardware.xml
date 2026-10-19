@@ -1,0 +1,7 @@
+<library path="battery_hardware">
+  <class name="battery_hardware/BatteryInterface"
+         type="battery_hardware::BatteryInterface"
+         base_class_type="hardware_interface::SensorInterface">
+    <description>Hardware interface pour la gestion de batterie via INA226.</description>
+  </class>
+</library>
